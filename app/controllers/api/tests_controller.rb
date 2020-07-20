@@ -4,4 +4,7 @@ class Api::TestsController < ApplicationController
     render json: { message: "Hello World!" }
     #lukes test code
   end
+
+  # more stuff will go here
+
 end
