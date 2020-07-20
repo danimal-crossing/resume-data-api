@@ -7,4 +7,6 @@ class Api::TestsController < ApplicationController
 
   # more stuff will go here
 
+  # one more comment for now
+
 end
