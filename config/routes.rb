@@ -13,8 +13,10 @@ Rails.application.routes.draw do
     delete "/educations/:id" => "educations#destroy"
     get "/capstones" => "capstones#index"
     get "/students" => "students#index"
+    get "students/:id" => "students#show"
     post "/students" => "students#create"
     patch "/students/:id" => "students#update"
+    delete "/students/:id" => "students#destroy"
     post "/sessions" => "sessions#create"
   end
 end
