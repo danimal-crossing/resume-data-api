@@ -1,8 +1,15 @@
 class Api::StudentsController < ApplicationController
 
+  before_action :authenticate_student, except: [:index, :show, :create, :update]
+
   def index
     @students = Student.all
     render "index.json.jb"
+  end
+
+  def show
+    @student = Student.find(params[:id])    
+    render "show.json.jb"
   end
 
   def create
@@ -51,4 +58,16 @@ class Api::StudentsController < ApplicationController
       render json: { errors: @student.errors.full_messages}, status: :unprocessable_entity
     end
   end
+
+  def destroy
+    @student = Student.find(params[:id])
+    if @student == current_student
+      @student.conversations.destroy_all
+      @student.destroy
+      render json: { message: "Student has successfully been removed"}
+    else
+      render json: { error: "Unauthorized student"}, status: :forbidden
+    end
+  end
+
 end
