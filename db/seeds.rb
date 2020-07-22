@@ -9,7 +9,6 @@ Education.create!([
   {start_date: "2014-08-27", end_date: "2018-05-17", degree: "history", university_name: "Brown University", details: "Student studied for 4 years at Brown University for a history degree along with a mathematics minor", student_id: 2}
 ])
 
-
 Capstone.create([
   {name: "Funny Fish Database", description: "A collection of the funniest looking fish alive!", url: "www.funnyfish.com", screenshot_url: "https://www.bestfunnies.com/wp-content/uploads/2012/08/Funny-Fish-08.jpg", student_id: 1},
   {name: "Code Memes", description: "Input your issue and a code meme will be generated to match your mood.", url: "www.codememes.com", screenshot_url: "https://www.probytes.net/wp-content/uploads/2018/01/5-1.png", student_id: 2}, 
