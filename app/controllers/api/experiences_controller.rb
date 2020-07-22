@@ -13,13 +13,19 @@ class Api::ExperiencesController < ApplicationController
       details: params[:details],
       student_id: params[:student_id]
     )
-    @experience.save
-    render json: {message: "Experience successfully added!"}
+    if @experience.save
+      render json: {message: "Experience successfully added!"}
+    else 
+      render { errors: @experience.errors.full_messages } 
+    end 
   end 
 
   def show
-    @experience = Experience.find(params[:id])
-    render "show.json.jb"
+    if @experience = Experience.find(params[:id])
+      render "show.json.jb"
+    else 
+      render { errors: @experience.errors.full_messages }
+    end 
   end 
 
   def update
@@ -32,13 +38,20 @@ class Api::ExperiencesController < ApplicationController
     @experience.details == params[:details] ||@experience.details,
     @experience.student_id == params[:student_id] ||@experience.student_id,
     
-    @experience.save
-    render "show.json.jb"
+    if @experience.save
+      render "show.json.jb"
+    else 
+      render json: { errors: @experience.errors.full_messages }, status: :bad_request
+    end 
   end 
 
   def destroy
     @experience = Experience.find(params[:id])
-    @experience.destroy
+    if @experience.destroy
+      render json: { message: "Experience successfully destroyed"}
+    else 
+      render json: { errors: @experience.errors.full_messages }, status: :bad_request
+    end 
   end 
 
 end
