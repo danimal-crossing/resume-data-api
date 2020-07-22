@@ -20,7 +20,7 @@ class Api::CapstonesController < ApplicationController
       description: params[:description],
       url: params[:url],
       screenshot_url: params[:screenshot_url],
-      student_id: 1
+      student_id: user.id
     )
     if @capstone.save
       render "show.json.jb"
