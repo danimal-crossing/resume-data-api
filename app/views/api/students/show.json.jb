@@ -8,12 +8,12 @@ student[:educations] = @student.educations.map do |education|
   render partial: '/api/educations/education', locals: {education: education}
 end
 
-# student[:experiences] = @student.experiences.map do |experience|
-#   render partial: '/api/experiences/experience', locals: {experience: experience}
-# end
+student[:experiences] = @student.experiences.map do |experience|
+  render partial: '/api/experiences/experience', locals: {experience: experience}
+end
 
-# student[:skills] = @student.skills.map do |skill|
-#   render partial: '/api/skills/skill', locals: {skill: skill}
-# end
+student[:skills] = @student.skills.map do |skill|
+  render partial: '/api/skills/skill', locals: {skill: skill}
+end
 
 student
