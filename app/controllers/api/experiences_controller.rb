@@ -17,7 +17,7 @@ class Api::ExperiencesController < ApplicationController
   end 
 
   def show
-    if @experience = Experience.find(params[:id])
+    if @experience == Experience.find(params[:id])
       render "show.json.jb"
     else 
       render json: { errors: @experience.errors.full_messages }
@@ -38,7 +38,7 @@ class Api::ExperiencesController < ApplicationController
       else 
         render json: { errors: @experience.errors.full_messages }, status: :bad_request
       end 
-    end
+    end 
   end 
 
   def destroy
