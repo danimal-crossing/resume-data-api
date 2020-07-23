@@ -1,3 +1,5 @@
 @capstones.map do |capstone|
-  render partial: "capstone.json.jb", locals: { capstone: capstone }
+  c = render partial: "capstone.json.jb", locals: { capstone: capstone }
+  c[:student] = render partial: "api/students/student.json.jb", locals: { student: capstone.student }
+  c 
 end
