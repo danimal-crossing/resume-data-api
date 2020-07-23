@@ -1,5 +1,7 @@
 class Api::EducationsController < ApplicationController
   
+  before_action :authenticate_student
+
   def index
     @educations = Education.all
     render "index.json.jb"
