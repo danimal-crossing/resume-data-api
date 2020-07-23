@@ -5,7 +5,19 @@ Student.create!([
 ])
 Education.create!([
   {start_date: "2011-08-25", end_date: "2015-05-11", degree: "computer science", university_name: "Carnegie Mellon University", details: "Student is an honor roll student who obtained an degree in computer science", student_id: 1},
-  {start_date: "2014-08-27", end_date: "2018-05-17", degree: "history", university_name: "Brown University", details: "Student studied for 4 years at Brown University for a history degree along with a mathematics minor", student_id: 2}
+  {start_date: "2014-08-27", end_date: "2018-05-17", degree: "history", university_name: "Brown University", details: "Student studied for 4 years at Brown University for a history degree along with a mathematics minor", student_id: 3},
+  {start_date: "2015-08-26", end_date: "2019-05-14", degree: "mathematics", university_name: "Rutgers University", details: "Student is also pursueing a writing minor", student_id: 2},
+  {start_date: "2014-08-27", end_date: "2018-05-17", degree: "english", university_name: "Columbia University", details: "Student shows great progress", student_id: 4},
+  {start_date: "2013-08-23", end_date: "2017-05-11", degree: "engineering", university_name: "Perdue University", details: "Student is pursueing a business minor", student_id: 5},
+  {start_date: "2014-08-22", end_date: "2018-05-12", degree: "engineering", university_name: "MIT", details: "Student is pursueing a double major in computer science", student_id: 6},
+  {start_date: "2013-08-26", end_date: "2017-05-6", degree: "computer science", university_name: "Notre Dame University", details: "Student is well liked by professors", student_id: 7},
+  {start_date: "2010-08-29", end_date: "2014-05-11", degree: "biology", university_name: "Yale University", details: "Student is a great leader", student_id: 8},
+  {start_date: "2012-08-29", end_date: "2016-05-10", degree: "chemistry", university_name: "Princeton University", details: "Student is involved in plenty of clubs", student_id: 9},
+  {start_date: "2010-08-21", end_date: "2018-05-17", degree: "biology", university_name: "University of California-Berkeley ", details: "Student's performance has improved", student_id: 10},
+  {start_date: "2011-08-23", end_date: "2015-05-16", degree: "business", university_name: "Penn State University", details: "Student showcases great business efficiency", student_id: 11},
+  {start_date: "2012-08-24", end_date: "2016-05-17", degree: "history", university_name: "Duke University", details: "Student has scored high marks on exams", student_id: 12},
+  {start_date: "2013-08-20", end_date: "2017-05-15", degree: "teaching", university_name: "University of LA", details: "Student works in community service a lot", student_id: 13},
+  {start_date: "2014-08-23", end_date: "2018-05-6", degree: "marine biology", university_name: "Ohio State University", details: "Student has a internship in Maine", student_id: 14},
 ])
 
 Capstone.create([
