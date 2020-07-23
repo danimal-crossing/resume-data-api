@@ -1,5 +1,7 @@
 class Api::CapstonesController < ApplicationController
 
+  before_action :authenticate_student, except: [:index, :show]
+
   def index
     @capstones = Capstone.all
     render "index.json.jb"
@@ -20,7 +22,7 @@ class Api::CapstonesController < ApplicationController
       description: params[:description],
       url: params[:url],
       screenshot_url: params[:screenshot_url],
-      student_id: 1
+      student_id: current_student.id
     )
     if @capstone.save
       render "show.json.jb"

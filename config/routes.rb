@@ -30,5 +30,7 @@ Rails.application.routes.draw do
     patch "/experiences/:id" => "experiences#update"
     delete "/experiences/:id" => "experiences#destroy"
 
+    post "/skills" => "skills#create"
+    delete "/skills/:id" => "skills#destroy"
   end
 end

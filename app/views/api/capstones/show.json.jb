@@ -1,1 +1,6 @@
-render partial: "capstone.json.jb", locals: { capstone: @capstone }
+# render partial: "capstone.json.jb", locals: { capstone: @capstone }
+
+capstone = render partial: "capstone.json.jb", locals: { capstone: @capstone }
+capstone[:student] = render partial: "api/students/student.json.jb", locals: { student: @capstone.student }
+
+capstone
