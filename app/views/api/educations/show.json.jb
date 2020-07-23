@@ -1,3 +1,8 @@
 education = render partial: "education.json.jb", locals: {education: @education}
 
+education[:student] = render partial: "api/students/student.json.jb", locals: {student: @education.student}
+
+if current_student
+  education[:owner] = (@education.student_id == current_student.id)
+end
 education
