@@ -36,3 +36,28 @@ Capstone.create([
   {name: "Corndog.io", description: "It’s literally just a load of corndogs falling from the sky.", url: "http://corndog.io/", screenshot_url: "https://makeawebsitehub.com/wp-content/uploads/2017/09/corndog.jpg", student_id: 13},
   {name: "chrismckenzie.com", description: "A very strange website that features a smiling pink cube that positions itself in the direction of wherever you put your mouse.", url: "https://chrismckenzie.com/", screenshot_url: "https://makeawebsitehub.com/wp-content/uploads/2017/09/chrismckenziecom.jpg", student_id: 14},
 ])
+
+Skill.create([
+  {name: "electic tuba", student_id: 1},
+  {name: "water polo", student_id: 2},
+  {name: "underwater basket weaving", student_id: 3},
+  {name: "zebra racing", student_id: 3},
+  {name: "bubble gum blowing", student_id: 4},
+  {name: "turtles", student_id: 4},
+  {name: "sticky note writing", student_id: 5},
+  {name: "synchronized weightlifting", student_id: 6},
+  {name: "4D chess", student_id: 6},
+  {name: "checkers", student_id: 7},
+  {name: "DnD", student_id: 8},
+  {name: "Turkey calls", student_id: 8},
+  {name: "dentistry", student_id: 9},
+  {name: "piracy", student_id: 9},
+  {name: "pokemon", student_id: 10},
+  {name: "sword swallowing", student_id: 10},
+  {name: "juggling", student_id: 11},
+  {name: "extreme eating challenges", student_id: 11},
+  {name: "cooking", student_id: 12},
+  {name: "hair dying", student_id: 13},
+  {name: "fire breathing", student_id: 14},
+  {name: "carpentry", student_id: 14},
+])
