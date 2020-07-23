@@ -8,7 +8,7 @@ class Api::SkillsController < ApplicationController
       student_id: current_student.id
     )
     if @skill.save
-      render json: {message: "Skill successfully added!"}
+      render json: { message: "Skill successfully added!"}
     else 
       render json: { errors: @skill.errors.full_messages } 
     end 
