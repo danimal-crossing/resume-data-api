@@ -48,6 +48,24 @@ Capstone.create([
   {name: "chrismckenzie.com", description: "A very strange website that features a smiling pink cube that positions itself in the direction of wherever you put your mouse.", url: "https://chrismckenzie.com/", screenshot_url: "https://makeawebsitehub.com/wp-content/uploads/2017/09/chrismckenziecom.jpg", student_id: 14},
 ])
 
+Experience.create([
+  {start_date: "2010-11-01", end_date: "2011-01-01", job_title: "Sales Associate", company_name: "Bucky Boy's Premiere Beltbuckles",
+  details: "Sold beltbuckles to people for a little bit", student_id: 1},
+  {start_date: "2015-03-01", end_date: "2017-01-04", job_title: "Frycook", company_name: "Uncle Gators' Fried Gator", details: "It was a good time, frying up gator for locals in Florida", student_id: 2},
+  {start_date: "2018-04-02", end_date: "2019-03-03", job_title: "Real Estate Agent", company_name: "Uncle Gators' Mobile Home Emporium", details: "It was a good time, selling mobile homes to locals in Florida", student_id: 3},
+  {start_date: "2013-07-11", end_date: "2014-06-11", job_title: "Sign Spinning Person", company_name: "Red Lobster", details: "I had to spin a sign every Saturday", student_id: 4},
+  {start_date: "2016-01-01", end_date: "2019-02-02", job_title: "Animator", company_name: "Universal Studios", details: "I did those bad cgi dinosaurs for the jurassic park movies", student_id: 5},
+  {start_date: "2012-06-02", end_date: "2014-09-02", job_title: "Pretzel Hypeman", company_name: "Auntie Anne's Pretzels", details: "Auntie Anne's hypeman at the Westpoint Mall", student_id: 6},
+  {start_date: "1992-01-01", end_date: "2014-01-01", job_title: "CTO", company_name: "Microsoft", details: "It was a good run", student_id: 7},
+  {start_date: "2008-03-02", end_date: "2013-10-10", job_title: "Product Design Lead I", company_name: "Heely's", details: "I worked on the prototype for a high-heeled heely's shoe", student_id: 8},
+  {start_date: "2004-02-01", end_date: "2004-02-10", job_title: "Casting Agent", company_name: "Happy Madison", details: "I had Adam Sandler's phone and just called his top 8", student_id: 9},
+  {start_date: "2009-10-01", end_date: "2010-02-11", job_title: "Cross Country Coach", company_name: "Schmitt Whittacre's Sacred Heart Preparatory School", details: "I was a coach and more than that, I was a Schmitty (go Bull Frogs!)", student_id: 10},
+  {start_date: "2014-04-11", end_date: "2016-02-04", job_title: "Animatronic Technician", company_name: "Chuck E Cheese's", details: "I don't want to talk about it", student_id: 11},
+  {start_date: "2019-01-01", end_date: "2020-01-01", job_title: "Tester", company_name: "EnvisiSoft", details: "videogames", student_id: 12},
+  {start_date: "2014-02-02", end_date: "2019-02-02", job_title: "Pilot II", company_name: "Southwest", details: "planes", student_id: 13},
+  {start_date: "2015-03-02", end_date: "2016-02-03", job_title: "Surgeon", company_name: "Dog and Cat Hospital", details: "Helping animals", student_id: 14},
+])
+
 Skill.create([
   {name: "electic tuba", student_id: 1},
   {name: "water polo", student_id: 2},
