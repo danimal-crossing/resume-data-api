@@ -1,10 +1,5 @@
 class Api::ExperiencesController < ApplicationController
   
-  # def index
-  #   @experiences = Experience.all
-  #   render "index.json.jb"
-  # end
-
   def create
     @experience = Experience.new(
       start_date: params[:start_date],
